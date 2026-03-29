@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JFX Electricidad ⚡</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+* {margin:0; padding:0; box-sizing:border-box;}
+body {
+  font-family: 'Poppins', sans-serif;
+  background:#0b0f14;
+  color:white;
+}
+
+/* NAV */
+nav {
+  position:fixed;
+  width:100%;
+  background:#0b0f14;
+  padding:15px 30px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:1000;
+}
+
+nav h2 {color:#f1c40f;}
+
+nav a {
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+}
+
+/* HERO */
+.hero {
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('fondo.jpg');
+  background-size:cover;
+}
+
+.hero img {width:200px; margin-bottom:20px;}
+
+.hero h1 {
+  font-size:40px;
+  color:#f1c40f;
+}
+
+.btn {
+  margin-top:20px;
+  padding:15px 30px;
+  background:#f1c40f;
+  color:black;
+  border:none;
+  border-radius:30px;
+  cursor:pointer;
+}
+
+/* SECCIONES */
+section {
+  padding:80px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+h2 {
+  text-align:center;
+  margin-bottom:40px;
+  color:#f1c40f;
+}
+
+/* SERVICIOS */
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card {
+  background:#161b22;
+  padding:25px;
+  border-radius:15px;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:translateY(-10px);
+}
+
+/* GALERIA */
+.galeria img {
+  width:100%;
+  border-radius:10px;
+}
+
+/* TESTIMONIOS */
+.testimonio {
+  background:#161b22;
+  padding:20px;
+  border-radius:10px;
+  margin-bottom:20px;
+}
+
+/* CONTACTO */
+.contacto {
+  text-align:center;
+}
+
+.contacto input, .contacto textarea {
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+  border:none;
+  border-radius:5px;
+}
+
+/* FOOTER */
+footer {
+  text-align:center;
+  padding:20px;
+  background:#111;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25d366;
+  padding:15px;
+  border-radius:50%;
+  font-size:30px;
+  text-decoration:none;
+  color:white;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav>
+  <h2>JFX ⚡</h2>
+  <div>
+    <a href="#servicios">Servicios</a>
+    <a href="#trabajos">Trabajos</a>
+    <a href="#clientes">Clientes</a>
+    <a href="#contacto">Contacto</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <img src="logo.png">
+  <h1>JFX ELECTRICIDAD</h1>
+  <p>Instalaciones • Reparaciones • Urgencias 24hs</p>
+  <button class="btn" onclick="window.location.href='#contacto'">Solicitar servicio</button>
+</div>
+
+<section id="servicios">
+  <h2>Servicios</h2>
+  <div class="grid">
+    <div class="card">Instalaciones eléctricas</div>
+    <div class="card">Reparaciones</div>
+    <div class="card">Tableros eléctricos</div>
+    <div class="card">Urgencias 24hs</div>
+  </div>
+</section>
+
+<section id="trabajos">
+  <h2>Trabajos realizados</h2>
+  <div class="grid galeria">
+    <img src="trabajo1.jpg">
+    <img src="trabajo2.jpg">
+    <img src="trabajo3.jpg">
+  </div>
+</section>
+
+<section id="clientes">
+  <h2>Clientes</h2>
+  <div class="testimonio">“Excelente servicio, muy profesional” ⭐⭐⭐⭐⭐</div>
+  <div class="testimonio">“Rápido y confiable, recomendado” ⭐⭐⭐⭐⭐</div>
+</section>
+
+<section>
+  <h2>Sobre nosotros</h2>
+  <p>
+  JFX Electricidad es una empresa dedicada a brindar soluciones eléctricas 
+  seguras y eficientes. Nos destacamos por la responsabilidad, rapidez 
+  y calidad en cada trabajo.
+  </p>
+</section>
+
+<section id="contacto" class="contacto">
+  <h2>Contacto</h2>
+  <input type="text" placeholder="Nombre">
+  <input type="tel" placeholder="Teléfono">
+  <textarea placeholder="Mensaje"></textarea>
+  <button class="btn">Enviar</button>
+</section>
+
+<footer>
+  <p>📞 1154584077</p>
+  <p>JFX Electricidad © 2026</p>
+</footer>
+
+<a class="whatsapp" 
+href="https://wa.me/5491154584077?text=Hola%20JFX%20Electricidad,%20en%20que%20podemos%20acompañarte%20en%20esta%20oportunidad"
+target="_blank">
+💬
+</a>
+
+</body>
+</html>
