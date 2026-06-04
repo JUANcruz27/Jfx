@@ -1061,7 +1061,7 @@
 
   <script>
     // WhatsApp setup
-    const phone = "+5491550038092"; // tu número
+    const phone = "1550038092"; // tu número
     const whatsappBase = "https://wa.me/" + phone;
 
     const autoMessage = "Hola, soy [TU NOMBRE]. ¿En qué podemos ayudarte? (Presupuesto de electricidad domiciliaria / complejos / edificios)";
